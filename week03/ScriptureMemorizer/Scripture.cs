@@ -44,4 +44,12 @@ public class Scripture
     {
         return _words.All(w => w.IsHidden());
     }
+
+    public void Reset()
+    {
+        foreach (var word in _words)
+        {
+            word.Show();
+        }
+    }
 }
