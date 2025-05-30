@@ -1,0 +1,75 @@
+CSE 210 Shared Lopez
+
+Youtube Video Program
+
+Video
+-----
+_title : string  
+_author : string  
+_length : int  
+_comments : List<Comment>  
+
+Video(title : string, author : string, length : int)  
+AddComment(comment : Comment) : void  
+GetNumComments() : int  
+GetDisplayText() : string  
+
+
+Comment
+-------
+_name : string  
+_text : string  
+
+Comment(name : string, text : string)  
+GetDisplayText() : string  
+
+
+Online Ordering Program
+
+Order
+-------
+_products : List<Products>
+_customer : Customer
+
+Order(products : List<Products>, customer : Customer)
+GetTotalCost() : float
+GetPackingLabel() : string
+GetShippingLabel() : string
+ 
+
+Product
+--------
+_name : string
+_productId : string
+_price : float 
+_quantity : int
+
+Product(name : string, productId : string, price : float, quantity : int)
+GetTotalCost() : float
+
+Customer
+--------
+
+_name : string
+_address : Address
+
+Customer (name: string, address : Address)
+LivesInUsa() : bool
+GetName() : string
+GetAddress() : Address
+
+ 
+Address
+--------
+
+_street : string
+_city : string
+_state : string
+_country : string
+
+Address(street : string, city : string, state : string, country : string)
+InUsa() : bool
+ToString() : string
+
+
+
