@@ -16,7 +16,6 @@ class Program
             Console.Write("Select a choice from the menu: ");
 
             string choice = Console.ReadLine();
-
             Activity activity = null;
 
             switch (choice)

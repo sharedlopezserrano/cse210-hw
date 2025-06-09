@@ -35,13 +35,12 @@ class ReflectionActivity : Activity
         Console.WriteLine("\n" + _prompts[rand.Next(_prompts.Count)]);
         Console.WriteLine("Consider the following questions:");
 
-        int timeLeft = GetDuration();
-        while (timeLeft > 5)
+        DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
+        while (DateTime.Now < endTime)
         {
             string q = _questions[rand.Next(_questions.Count)];
             Console.WriteLine("\n" + q);
             ShowSpinner(5);
-            timeLeft -= 5;
         }
     }
 }

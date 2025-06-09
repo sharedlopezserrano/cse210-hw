@@ -21,14 +21,13 @@ class VisualizationActivity : Activity
     protected override void PerformActivity()
     {
         Random rand = new Random();
-        int timeLeft = GetDuration();
+        DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
 
-        while (timeLeft > 4)
+        while (DateTime.Now < endTime)
         {
             string step = _visualSteps[rand.Next(_visualSteps.Count)];
             Console.WriteLine("\n" + step);
             ShowSpinner(4);
-            timeLeft -= 4;
         }
     }
 }
