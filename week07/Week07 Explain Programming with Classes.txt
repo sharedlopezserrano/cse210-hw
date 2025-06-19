@@ -1,0 +1,15 @@
+Abstraction means we hide complex things and show only the important parts. It helps people use the program without knowing all the details
+In my exercise tracker program, I used abstraction by creating a base class called Activity. This class had methods like GetDistance() and GetSpeed() that the other classes could use
+This helped the program because if I want to add a new activity later like Hiking, I don’t need to change everything. I just create a new class, and the rest still works
+
+Abstraction means we hide complex things and show only the important parts. It helps people use the program without knowing all the details
+In my exercise tracker program, I used abstraction by creating a base class called Activity. This class had methods like GetDistance() and GetSpeed() that the other classes could use.
+This helped the program because if I want to add a new activity later like Hiking, I don’t need to change everything. I just create a new class, and the rest still works
+
+Inheritance means we can create a new class based on an old one. The new class gets all the functions from the old class
+In my tracker app, I made a base class Activity, then I made other classes like Running, Swimming, and Cycling that inherit from Activity
+This helps make the program shorter and easier to update. If I want to change how the summary works, I can change it in the Activity class and it works for all activities
+
+Polymorphism means one method name can do different things depending on the object
+In my app, I used a method called GetSummary(). Each activity type Running, Swimming, etc, could have its own way to do the summary. But when I called GetSummary() on a list of activities, each one gave the right result
+This helped because I didn’t need to check the activity type. The code is clean, and I can add new activity types in the future without breaking the old code
